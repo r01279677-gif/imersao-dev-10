@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo da Literatura</title>
+    <!-- Carregando a fonte Lora do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Adicionando Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Mundo da Literatura</h1>
+        <button id="theme-toggle" class="theme-toggle-button" aria-label="Ativar modo escuro">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+        <p>Explore clássicos e descubra novas obras</p>
+        <div class="language-selector">
+            <label for="language-select">Idioma:</label>
+            <select id="language-select">
+                <option value="pt-br">Português</option>
+                <option value="en">Inglês (English)</option>
+                <option value="es">Espanhol (Español)</option>
+                <option value="ru">Russo (Русский)</option>
+                <option value="fr">Francês (Français)</option>
+                <option value="de">Alemão (Deutsch)</option>
+            </select>
+        </div>
+        <div class="header-controls">
+            <input type="text" id="search-input" placeholder="Buscar por título ou autor...">
+            <button id="sort-button">Ordenar por Ano</button>
+            <button id="clear-filters-button">Limpar Filtros</button>
+        </div>
+    </header>
+
+    <main>
+        <nav class="filter-nav">
+            <!-- Botões de filtro serão inseridos aqui pelo JavaScript -->
+        </nav>
+
+        <!-- Mensagem de Carregamento -->
+        <div id="loading-message" class="loading-message">
+            <p>Carregando livros...</p>
+        </div>
+
+        <section id="book-container" class="book-container">
+            <!-- Os cards dos livros serão inseridos aqui pelo JavaScript -->
+        </section>
+
+        <nav id="pagination-container" class="pagination-container">
+            <!-- Controles de paginação serão inseridos aqui -->
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Mundo da Literatura</h3>
+                <p>Sua biblioteca digital para explorar os maiores clássicos e descobrir novas obras literárias de todo o mundo.</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Siga-nos</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mundo da Literatura. Todos os direitos reservados.</p>
+            <button id="reset-language-button" class="footer-button">Redefinir Idioma</button>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="back-to-top-button" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="./app.min.js"></script> <!-- Ou app.js se não for minificar -->
+</body>
+
+</html>
